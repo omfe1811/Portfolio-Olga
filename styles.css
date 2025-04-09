@@ -148,13 +148,16 @@ section {
   text-align: center;
 }
 .a-t-left {
+  display: flex;
   text-align: left;
 }
 /* ALIGN ITEMS VERTICALLY */
 .a-i-center {
+  display: flex;
   align-items: center;
 }
 .a-i-left {
+  display: flex;
   align-items: flex-start;
 }
 /* JUSTIFY CONTENT HORIZONTALLY */
@@ -162,6 +165,13 @@ section {
 .j-center {
   display: flex;
   justify-content: center;
+}
+.j-s-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.j-left {
+  justify-content: left;
 }
 /* justify-content: center;
 justify-content: start;
