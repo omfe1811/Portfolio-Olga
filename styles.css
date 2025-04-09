@@ -110,11 +110,14 @@ textarea:not([rows]) {
 }
 section {
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 
-/* #background-long {
+#background-long {
   background-image: url("pictures/pillars-of-creation.png");
+  scroll-snap-type: y mandatory;
 }
+/* 
 #get-in-touch-container {
   background-image: url("pictures/pillars-of-creation-stars.png");
 } */
@@ -160,6 +163,14 @@ section {
   display: flex;
   align-items: flex-start;
 }
+.a-i-flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+.a-i-flex-end {
+  display: flex;
+  align-items: flex-end;
+}
 /* JUSTIFY CONTENT HORIZONTALLY */
 /* CENTER */
 .j-center {
@@ -171,7 +182,12 @@ section {
   justify-content: space-evenly;
 }
 .j-left {
-  justify-content: left;
+  display: flex;
+  justify-content: flex-start;
+}
+.j-flex.end {
+  display: flex;
+  justify-content: flex-end;
 }
 /* justify-content: center;
 justify-content: start;
@@ -203,6 +219,18 @@ justify-content: unset;  */
   border-radius: 50%;
   height: 100px;
   width: 100px;
+}
+/* WIDTH AND PADDING FOR SKILLS AND CONTACT */
+.w-fit {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+.h100 {
+  height: 100%;
+}
+/* PADDING 1 REM */
+.p3 {
+  padding: 3rem;
 }
 /* BORDER FOR ABOUT ME, SKILLS AND CONTACT */
 .border-mixed {
