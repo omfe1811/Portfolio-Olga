@@ -125,7 +125,13 @@ section {
   max-width: 30%;
 }
 
+/*          STRUCTURE       */
+
 /* FLEX */
+.w100 {
+  width: 100%;
+}
+/* FLEX DIRECTION */
 .row {
   display: flex;
   flex-direction: row;
@@ -137,16 +143,56 @@ section {
   gap: 1rem;
 }
 
-/* ALIGN */
-.a-center {
+/* ALIGN TEXT */
+.a-t-center {
   text-align: center;
 }
-.a-left {
+.a-t-left {
   text-align: left;
 }
+/* ALIGN ITEMS VERTICALLY */
+.a-i-center {
+  align-items: center;
+}
+.a-i-left {
+  align-items: flex-start;
+}
+/* JUSTIFY CONTENT HORIZONTALLY */
+/* CENTER */
+.j-center {
+  display: flex;
+  justify-content: center;
+}
+/* justify-content: center;
+justify-content: start;
+justify-content: end;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: left;
+justify-content: right;
+/* Distributed alignment */
+
+/* justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+justify-content: stretch; */
+/* Overflow alignment (for positional alignment only)*/
+
+/* justify-content: safe center;
+justify-content: unsafe center; */
+
+/* Global values */
+/* justify-content: inherit;
+justify-content: initial;
+justify-content: revert;
+justify-content: revert-layer;
+justify-content: unset;  */
+
 /* CIRCLE SHAPE */
 .circle {
   border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 /* BORDER FOR ABOUT ME, SKILLS AND CONTACT */
 .border-mixed {
