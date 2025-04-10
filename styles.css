@@ -13,6 +13,7 @@ html {
   background-color: #021130;
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -110,12 +111,10 @@ textarea:not([rows]) {
 }
 section {
   min-height: 100vh;
-  scroll-snap-align: start;
 }
 
 #background-long {
   background-image: url("pictures/pillars-of-creation.png");
-  scroll-snap-type: y mandatory;
 }
 /* 
 #get-in-touch-container {
@@ -220,6 +219,11 @@ justify-content: unset;  */
   height: 100px;
   width: 100px;
 }
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 /* WIDTH AND PADDING FOR SKILLS AND CONTACT */
 .w-fit {
   width: fit-content;
@@ -316,6 +320,19 @@ justify-content: unset;  */
 .name {
   font-family: Header;
   font-size: 10em;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  max-width: 100%;
+  display: block;
+}
+#nav-container {
+  position: sticky;
+  top: 0;
+  background-color: #aeb6c411;
+  color: white;
 }
 @font-face {
   font-family: Header;
